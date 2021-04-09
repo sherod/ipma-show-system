@@ -1,0 +1,44 @@
+type Entrant
+  @model
+  @auth(rules: [{ allow: owner }, { allow: groups, groups: ["admin"] }])
+  @key(
+    name: "byEntrantNumber"
+    fields: ["entrantNumber"]
+    queryField: "byEntrantNumber"
+  ) {
+  id: ID!
+  firstname: String!
+  lastname: String!
+  memberOfClub: String!
+  contactPhone: String!
+  entrantNumber: Int
+  checkedIn: Boolean
+  age: Int
+  entries: [Entry] @connection(keyName: "byEntrant", fields: ["id"])
+}
+
+type Entry
+  @model
+  @auth(rules: [{ allow: owner }, { allow: groups, groups: ["admin"] }])
+  @key(name: "byEntrant", fields: ["entrantID"], queryField: "byEntrant")
+  @key(
+    name: "byEntryNumber"
+    fields: ["entryNumber"]
+    queryField: "byEntryNumber"
+  ) {
+  id: ID!
+  name: String!
+  scale: String!
+  category: String!
+  manufacturer: String!
+  entrantID: ID!
+  entryNumber: Int
+}
+
+type Counter
+  @model
+  @key(name: "byType", fields: ["name"], queryField: "byType") {
+  id: ID!
+  name: String!
+  count: Int
+}
