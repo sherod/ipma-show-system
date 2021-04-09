@@ -91,7 +91,7 @@ function EntryModal(props) {
                   onBlur={handleBlur}
                   value={values._version}
                 />
-                <Form.Label>Entry Name :</Form.Label>
+                <Form.Label>Entry Name </Form.Label>
                 <Form.Control
                   type="text"
                   name="name"
@@ -106,7 +106,7 @@ function EntryModal(props) {
                 ) : null}
               </Form.Group>
               <Form.Group controlId="formScale">
-                <Form.Label>Scale :</Form.Label>
+                <Form.Label>Scale (Use 1/1 Scale for EGG models)</Form.Label>
                 <Form.Control
                   type="text"
                   name="scale"
