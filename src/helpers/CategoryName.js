@@ -92,12 +92,13 @@ const seniorCategories = [
     code: "S.39",
     name: "39. MOVIES, SCIENCE FICTION AND FANTASY FIGURES   ALL SCALES",
   },
-  { code: "S.40", name: "40. WARHAMMER   ALL SCALES" },
+  { code: "S.40", name: "40. Gaming Minitures (inc WARHAMMER)   ALL SCALES" },
   { code: "S.41", name: "41. OPEN / SCRATCHBUILT   ALL SCALES" },
   { code: "S.45", name: "45. AUSTRALIAN AFVs   12785" },
   { code: "S.46", name: "46. EGG MODELS ALL TYPES   ALL SCALES" },
   { code: "S.47", name: "47. The Airfix Cup" },
   { code: "S.48", name: "48. The Panzer Tracks Trophy" },
+  { code: "S.49", name: "49. Gundam" },
 ];
 
 function CategoryName(props) {

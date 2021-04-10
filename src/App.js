@@ -20,6 +20,19 @@ Amplify.configure(awsconfig);
 const Home = lazy(() => import("./home/Home"));
 const Admin = lazy(() => import("./admin/Admin"));
 
+function Footer(props) {
+  return (
+    <Container>
+      By entering, you agree to the{" "}
+      <a href="https://ipmamodels.net/competition-rules/" target="_new">
+        competition rules.
+      </a>{" "}
+      Our privacy policy is simple: we only use your information to administer
+      the show.
+    </Container>
+  );
+}
+
 function App() {
   const [authState, setAuthState] = React.useState();
   const [user, setUser] = React.useState();
@@ -69,6 +82,7 @@ function App() {
           </Route>
         </Switch>
       </Suspense>
+      <Footer />
     </Router>
   ) : (
     <Router>
