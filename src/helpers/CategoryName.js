@@ -92,7 +92,7 @@ const seniorCategories = [
     code: "S.39",
     name: "39. MOVIES, SCIENCE FICTION AND FANTASY FIGURES   ALL SCALES",
   },
-  { code: "S.40", name: "40. Gaming Minitures (inc WARHAMMER)   ALL SCALES" },
+  { code: "S.40", name: "40. Gaming Miniatures (inc WARHAMMER)   ALL SCALES" },
   { code: "S.41", name: "41. OPEN / SCRATCHBUILT   ALL SCALES" },
   { code: "S.45", name: "45. AUSTRALIAN AFVs   12785" },
   { code: "S.46", name: "46. EGG MODELS ALL TYPES   ALL SCALES" },
