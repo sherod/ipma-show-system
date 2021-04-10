@@ -22,6 +22,19 @@ function Saving(props) {
   return <></>;
 }
 
+function Footer(props) {
+  return (
+    <Container>
+      By entering, you agree to the{" "}
+      <a href="https://ipmamodels.net/competition-rules/" target="_new">
+        competition rules.
+      </a>{" "}
+      Our privacy policy is simple: we only use your information to administer
+      the show.
+    </Container>
+  );
+}
+
 function Home(props) {
   const saving = useSelector((state) => state.entries.saving);
 
@@ -54,6 +67,7 @@ function Home(props) {
           <LinkContainer to="/help">
             <a>Any questions? Visit the Help Page</a>
           </LinkContainer>
+          <Footer />
         </p>
       </Container>
     </div>
