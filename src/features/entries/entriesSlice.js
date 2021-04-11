@@ -47,7 +47,11 @@ export const entriesSlice = createSlice({
     getEntriesSuccess: (state, { payload }) => {
       state.entries = payload;
       state.entryCount = payload.length;
-      state.cost = state.entryCount * 3;
+      let totalCost = state.entryCount * 3;
+      if (totalCost > 45) {
+        totalCost = 45;
+      }
+      state.cost = totalCost;
       state.loading = false;
       state.hasErrors = false;
     },

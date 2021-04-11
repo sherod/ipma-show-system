@@ -94,11 +94,12 @@ const seniorCategories = [
   },
   { code: "S.40", name: "40. Gaming Miniatures (inc WARHAMMER)   ALL SCALES" },
   { code: "S.41", name: "41. OPEN / SCRATCHBUILT   ALL SCALES" },
+  { code: "S.47", name: "42. The Airfix Cup - Hawker Hunter" },
+  { code: "S.48", name: "43. The Panzer Tracks Trophy - Desert War 1940-43" },
+  { code: "S.44", name: "44. Australian Military Aircraft - 1922 to 1945" },
   { code: "S.45", name: "45. AUSTRALIAN AFVs   12785" },
   { code: "S.46", name: "46. EGG MODELS ALL TYPES   ALL SCALES" },
-  { code: "S.47", name: "47. The Airfix Cup" },
-  { code: "S.48", name: "48. The Panzer Tracks Trophy" },
-  { code: "S.49", name: "49. Gundam" },
+  { code: "S.49", name: "47. Gundam" },
 ];
 
 function CategoryName(props) {
